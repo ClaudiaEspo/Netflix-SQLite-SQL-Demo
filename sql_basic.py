@@ -1,7 +1,7 @@
 import kagglehub
 import pandas as pd
 import sqlite3
-# Download latest version
+# Download dell'ultima versione
 path = kagglehub.dataset_download("shivamb/netflix-shows")
 
 print("Path to dataset files:", path)
@@ -101,7 +101,7 @@ print(df3)
 # ==========================
 # 4️⃣ Joins
 # ==========================
-# Inseriamo dati nella tabella genres usando listed_in come esempio
+
 cur.execute("INSERT INTO genres (show_id, genre) VALUES ('EX123', 'Drama')")
 cur.execute("INSERT INTO genres (show_id, genre) VALUES ('EX123', 'Action')")
 
@@ -179,7 +179,7 @@ SET rating='NR'
 WHERE rating IS NULL;
 """)
 
-# Verifica i risultati con una SELECT
+# Verifica deii risultati con una SELECT
 query8 = """
 SELECT title, rating
 FROM netflix
